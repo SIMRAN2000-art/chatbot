@@ -3,6 +3,7 @@ import google.generativeai as genai
 st.title("Own Chat APP-Gemini")
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 with st.form("Gemini"):
+    
     text = st.text_area("Enter Your Prompt")
     submitted = st.form_submit_button("Submit")
 
